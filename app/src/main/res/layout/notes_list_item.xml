@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="@dimen/dp_48"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    >
+
+    <TextView
+        android:id="@+id/tv_note_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_next"
+        android:textSize="@dimen/sp_16"
+        android:typeface="normal"
+        android:layout_margin="@dimen/dp_16"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@drawable/ic_next"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/dp_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
